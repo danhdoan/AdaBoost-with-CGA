@@ -34,9 +34,9 @@
 
 ## Program structure:
 
-main
-|__ trainProcess
-|__ testProcess
+	main
+	|__ trainProcess
+	|__ testProcess
 
 
 ### Training Process:
