@@ -1,6 +1,6 @@
-###Application of Conformal Geometric Algebra to In-plane Rotated Face Detection by AdaBoost-based Algorithm
+# Application of Conformal Geometric Algebra to In-plane Rotated Face Detection by AdaBoost-based Algorithm
 
-NetBean project:
+## NetBean project:
 
 	- 20180228_gauss_yi: implementation of AdaBoost with Gaussian distribution
 		- Outputs:
@@ -32,14 +32,14 @@ NetBean project:
 
 --------------------------------------------------------------------------------
 
-##Program structure:
+## Program structure:
 
 main
 |__ trainProcess
 |__ testProcess
 
 
-#Training Process:
+### Training Process:
 	trainProcess
 	|__ readInputImage
 	|__ prepareIntegralImage
@@ -47,7 +47,7 @@ main
 	|__ algorithmAdaboost
 	|__ saveArrWeakClass
 
-Functions:
+#### Functions:
 
 	ArrayList<int[][]> readInputImage(String path)
 		Parameter:
@@ -121,7 +121,7 @@ Functions:
 			- Apply Color map to compute feature value
 
 
-#Test Process:
+### Test Process:
 	testProcess
 	|__ readInputImage
 	|__ prepareIntegralImage
@@ -129,7 +129,7 @@ Functions:
 	|__ loadWeakClass
 	|__ testAdaBoost
 
-Functions:
+#### Functions:
 
 	void testAdaBoost(WeakClass[] arrWeakClass, int len, double rate)
 		Parameter:
